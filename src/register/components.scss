@@ -1,0 +1,19 @@
+/* Atoms */
+
+@import "../components/atoms/FormInput/form-input.scss";
+@import "../components/atoms/Button/button.scss";
+@import "../components/atoms/Icon/a-icon.scss";
+
+/* Molecules */
+
+@import "../components/molecules/PersonsTable/persons-table.scss";
+@import "../components/molecules/AddPersonForm/add-person-form.scss";
+@import "../components/molecules/PersonsTable/PersonsTableRow/persons-table-row.scss";
+
+/* Organisms */
+
+@import "../components/organisms/PersonsControl/persons-control.scss";
+
+/* Pages */
+
+@import "../pages/HomePage/home-page.scss";

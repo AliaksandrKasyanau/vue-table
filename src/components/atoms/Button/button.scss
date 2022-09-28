@@ -1,0 +1,7 @@
+.a-button {
+  @include button;
+}
+
+.danger {
+  @include button_danger;
+}

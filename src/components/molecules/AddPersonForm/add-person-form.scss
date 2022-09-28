@@ -1,0 +1,12 @@
+.m-add-person-form {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 15px;
+  align-items: center;
+}
+@media (max-width: 720px) {
+  .m-add-person-form {
+    flex-flow: row wrap;
+  }
+}

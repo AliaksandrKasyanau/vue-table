@@ -1,0 +1,47 @@
+.m-persons-table {
+  max-height: 400px;
+  height: $full-height;
+  width: $full-width;
+}
+
+.m-persons-table__wrapper {
+  display: flex;
+  flex-direction: column;
+  max-height: inherit;
+  background: #e9f4fd;
+  border-radius: $border-radius;
+  overflow: hidden;
+}
+
+.m-persons-table__header {
+  @include table_row;
+
+
+  border-bottom: $separator-color solid 1px;
+
+  .m-persons-table__header__item {
+    @include table_row__item;
+
+    &:first-child {
+      width: 20%;
+    }
+  }
+}
+
+.m-persons-table__no-persons {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+  h1 {
+    @include boldText;
+
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+.m-persons-table__body {
+  overflow-y: scroll;
+  scrollbar-width: none;
+}

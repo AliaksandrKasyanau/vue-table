@@ -1,0 +1,29 @@
+.a-form-input {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: $base-vertical-padding;
+}
+
+.a-form-input__label {
+  @include input_label;
+}
+
+.a-form-input__input {
+  @include input;
+  position: relative;
+}
+
+.a-form-input__input-icon {
+position: absolute;
+}
+
+.a-form-input__invalid {
+  border: red solid 1px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: red solid 1px;
+    outline: none
+  }
+}

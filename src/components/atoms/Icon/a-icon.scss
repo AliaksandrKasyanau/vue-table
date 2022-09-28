@@ -1,0 +1,17 @@
+.a-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: auto;
+  width: 24px;
+  height: 24px;
+
+  svg {
+    width: $full-width;
+    height: $full-height;
+  }
+}

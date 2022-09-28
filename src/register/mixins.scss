@@ -1,0 +1,73 @@
+@mixin normalText {
+  font-weight: 200;
+  font-size: 15px;
+}
+
+@mixin boldText {
+  font-weight: 800;
+  font-size: 15px;
+}
+
+@mixin border {
+  border: $border-color solid 1px;
+  border-radius:$border-radius;
+}
+
+@mixin table-row {
+  display: flex;
+  margin: 10px 25px 10px 25px;
+  padding: 10px;
+}
+
+@mixin table-row__item {
+  @include normalText;
+
+  display: flex;
+  justify-content: center;
+  width: $full-width;
+  word-wrap: anywhere;
+  text-align: center;
+  padding: 10px;
+}
+
+@mixin input_label {
+  @include boldText;
+  margin-bottom: 10px;
+}
+
+@mixin input {
+  @include border;
+  @include normalText;
+
+  padding: $padding;
+  margin: 10px 0 10px 0;
+
+  &:active,
+  &:focus,
+  &:hover {
+    border-color: $base-color__hover;
+  }
+}
+
+@mixin button {
+  @include boldText;
+  @include border;
+
+  padding: 25px;
+  background: $base-color;
+
+  &:hover {
+    background: $base-color__hover;
+    cursor: pointer;
+  }
+}
+
+@mixin button_danger {
+  background: $danger-color;
+  border-color: $danger-border;
+  color: #ffffff;
+
+  &:hover {
+    background: $danger-color-hover;
+  }
+}

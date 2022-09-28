@@ -1,0 +1,28 @@
+.o-persons-control {
+  @include border;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  width: $full-width;
+  max-width: 1000px;
+}
+
+.o-persons-control__footer {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.o-persons-control__footer-persons-search {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  input {
+    margin: 10px;
+  }
+}

@@ -1,0 +1,27 @@
+.m-persons-table__row {
+  @include table-row;
+
+  cursor: pointer;
+  border-radius:$border-radius;
+
+  &:hover {
+    background: $base-color__hover;
+  }
+}
+
+.selected {
+  background: $base-color__active;
+}
+
+.m-persons-table__row__item {
+  @include table-row__item;
+
+  border-right: $separator-color solid 1px;
+
+  &:first-child {
+    width: 20%;
+  }
+  &:last-child {
+    border-right: none;
+  }
+}
